@@ -6,31 +6,19 @@
     <title>Min Profil</title>
     <link rel="stylesheet" href="profil.css">
     <script src="home.js" charset="utf-8"></script>
-      <meta name="viewport" content="width=device-width, initial-scale=0.1, maximum-scale=1, user-scalable=no, height=device-height">
+   <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=1, user-scalable=no, height=device-height">
       <meta name="apple-mobile-web-app-capable" content="yes">
     	<meta name="apple-application-name" content="App">
       	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    
     <style>
-      
-body{
+      body{
 display: flex;
 width: 415px;
 height: 900px;
 flex-direction: column;
 }
 
-@media screen and (min-height: 480px) {
-  body {
-    width: 410px;
-    height: 800px;
-  }
-  .middle{
-  height: 500px;
-  display: flex;
-  border: solid black 1px;
-  }
-}
+
 
 
 .top{
@@ -39,7 +27,7 @@ height: 10px;
 }
 
 .middle{
-height: 800px;
+height: 500px;
 display: flex;
 border: solid black 1px;
 }
@@ -51,7 +39,20 @@ height: 100px;
 width: 415px;
 background-color: gray;opacity:0.6;
 position: absolute;
+top: 850px;
 }
+@media screen and (max-height: 480px) {
+  .bottom{
+  height: 100px;
+  width: 415px;
+  background-color: gray;opacity:0.6;
+  position: absolute;
+  top: 600px;
+  }
+}
+
+
+
 
 .menu{
 height: 100px;
@@ -168,17 +169,13 @@ flex-direction: row;
 height: 500px;
 }
 
-
-
-      
       
     </style>
     
     
     
-    
   </head>
-   <body>
+  <body>
 <center>
 <div class="middle">
 <div class="top">
@@ -240,7 +237,7 @@ height: 500px;
   </div>
   </div>
 
-</center>
+
 <div class="bottom">
 <div class="menu">
 
@@ -265,6 +262,6 @@ Min Profil
 </div>
 
 
-
+</center>
   </body>
 </html>
