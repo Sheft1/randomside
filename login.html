@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="no" dir="ltr">
+  <head>
+
+    <meta charset="utf-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="profil.css">
+    <script src="profil.js" charset="utf-8"></script>
+   <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=1, user-scalable=no, height=device-height">
+      <meta name="apple-mobile-web-app-capable" content="yes">
+    	<meta name="apple-application-name" content="App">
+      	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <style>
+      body{
+display: flex;
+width: 415px;
+height: 900px;
+flex-direction: column;
+}
+
+
+
+
+.top{
+height: 10px;
+
+}
+
+.middle{
+height: 500px;
+display: flex;
+border: solid black 1px;
+}
+
+
+
+.bottom{
+height: 100px;
+width: 415px;
+background-color: gray;opacity:0.6;
+position: absolute;
+top: 850px;
+}
+
+@media screen and (max-height: 480px) {
+  .bottom{
+  height: 100px;
+  width: 415px;
+  background-color: gray;opacity:0.6;
+  position: absolute;
+  top: 600px;
+  }
+}
+
+
+
+
+.menu{
+height: 100px;
+width: 100%;
+display: flex;
+    border: solid black 1px;
+
+}
+
+#menu{
+  display: flex;
+  border: solid black 1px;
+  height: 100%;
+  width: 100%;
+  font-size: 30px;
+text-align: center;
+}
+
+#menu:active{
+background-color: gray;
+}
+
+
+#content{
+min-width: 100%;
+min-height: 2000px;
+}
+
+#user-pic{
+
+}
+
+#user{
+height: 300px;
+width: 100%;
+  border: solid black 1px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#upload{
+height: 1000px;
+  border: solid black 1px;
+}
+
+#space{
+  height: 300px;
+}
+
+
+/* user  */
+#dot {
+  height: 200px;
+  width: 200px;
+  background-color: none;
+  border-radius: 50%;
+  display: block;
+  border: solid black 1px;
+  overflow: hidden;
+}
+
+#dot img{
+ height: 200px;
+  width: 200px;
+}
+
+#user{
+  display: flex;
+height: 500px;
+
+}
+
+#name{
+min-width: 200px;
+display: flex;
+font-size: 30px;
+height: 50px;
+align-items: center;
+justify-content: center;
+}
+
+
+#sq{
+ display: flex;
+height:200px;
+width: 200px;
+  align-items: center;
+  justify-content: center;
+}
+
+#username{
+display: flex;
+height: 20px;
+width: 200px;
+font-size: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+#users{
+display: flex;
+position: absolute;
+min-height: 100px;
+max-height: 200px;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+#status{
+flex-direction: row;
+height: 500px;
+}
+
+.login {
+  	box-sizing: border-box;
+  	font-family: -apple-system, BlinkMacSystemFont, "segoe ui", roboto, oxygen, ubuntu, cantarell, "fira sans", "droid sans", "helvetica neue", Arial, sans-serif;
+  	font-size: 16px;
+  	-webkit-font-smoothing: antialiased;
+  	-moz-osx-font-smoothing: grayscale;
+}
+
+.login {
+  	width: 400px;
+  	background-color: #ffffff;
+  	box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.3);
+  	margin: 100px auto;
+}
+.login h1 {
+  	text-align: center;
+  	color: #5b6574;
+  	font-size: 24px;
+  	padding: 20px 0 20px 0;
+  	border-bottom: 1px solid #dee0e4;
+}
+.login form {
+  	display: flex;
+  	flex-wrap: wrap;
+  	justify-content: center;
+  	padding-top: 20px;
+}
+.login form label {
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	width: 50px;
+  	height: 50px;
+  	background-color: #3274d6;
+  	color: #ffffff;
+}
+.login form input[type="password"], .login form input[type="text"] {
+  	width: 310px;
+  	height: 50px;
+  	border: 1px solid #dee0e4;
+  	margin-bottom: 20px;
+  	padding: 0 15px;
+}
+.login form input[type="submit"] {
+  	width: 100%;
+  	padding: 15px;
+ 	margin-top: 20px;
+  	background-color: #3274d6;
+  	border: 0;
+  	cursor: pointer;
+  	font-weight: bold;
+  	color: #ffffff;
+  	transition: background-color 0.2s;
+}
+.login form input[type="submit"]:hover {
+	background-color: #2868c7;
+  	transition: background-color 0.2s;
+}
+
+    </style>
+    
+    
+    
+  </head>
+  <body>
+<center>
+<div class="middle">
+<div class="top">
+
+
+</div>
+
+
+
+
+<div class="login">
+			<h1>Login</h1>
+			<form action="authenticate.php" method="post">
+				<label for="username">
+					<i class="fas fa-user"></i>
+				</label>
+				<input type="text" name="username" placeholder="Username" id="username" required>
+				<label for="password">
+					<i class="fas fa-lock"></i>
+				</label>
+				<input type="password" name="password" placeholder="Password" id="password" required>
+				<input type="submit" value="Login">
+			</form>
+		</div>
+
+
+<div class="bottom">
+<div class="menu">
+
+  <div id="menu" onclick="window.location='home.html'">
+hjem
+  </div>
+
+  <div id="menu" onclick="window.location='sok.html'">
+søk
+  </div>
+  <div id="menu" onclick="window.location='profil.html'">
+Min Profil
+  </div>
+  <div id="menu" onclick="window.location='oprofil.html'">
+Min Profil
+  </div>
+
+
+
+
+</div>
+</div>
+
+
+</center>
+  </body>
+</html>
