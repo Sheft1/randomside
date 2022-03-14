@@ -5,174 +5,118 @@
     <meta charset="utf-8">
     <title>Min Profil</title>
     <link rel="stylesheet" href="profil.css">
-    <script src="home.js" charset="utf-8"></script>
+    <script src="profil.js" charset="utf-8"></script>
    <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=1, user-scalable=no, height=device-height">
       <meta name="apple-mobile-web-app-capable" content="yes">
     	<meta name="apple-application-name" content="App">
       	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
     <style>
-      body{
-display: flex;
-width: 415px;
-height: 900px;
-flex-direction: column;
-}
+      <!DOCTYPE html>
+<html lang="no" dir="ltr">
+  <head>
+
+    <meta charset="utf-8">
+    <title>Min Profil</title>
+    <link rel="stylesheet" href="profil.css">
+    <script src="profil.js" charset="utf-8"></script>
+   <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=1, user-scalable=no, height=device-height">
+      <meta name="apple-mobile-web-app-capable" content="yes">
+    	<meta name="apple-application-name" content="App">
+      	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  </head>
+  <body>
+<center>
+<div class="middle">
+<div class="top">
+
+
+</div>
 
 
 
 
-.top{
-height: 10px;
+  <div id="user">
+  <div id="sq">
 
-}
+  <div id="dot">
 
-.middle{
-height: 500px;
-display: flex;
-border: solid black 1px;
-}
+     <img src="https://www.regjeringen.no/contentassets/7f29f8cbc0704ce1a582100940651c65/ernasolberg2_portrett.jpg?preset=article&v=1183980377" alt="profilepic">
+   </div>
+   </div>
+   <div id="sq">
+   <div id="users">
+   <div id="name">
 
+   <h3>Erna Solberg</h3>
+    </div>
+   <div id="username">
+   <h3> @ernaEr_digg </h3>
+   </div>
 
+   <div id="status">
+   <h3> Snus:<form action="">
+    <label for="snus"></label>
+    <select id="dropdown1" onchange="chng1()"  name="snus">
+      <option value="Har mye">Har mye</option>
+      <option value="Har">Har</option>
+      <option value="Har litt">Har litt</option>
+      <option value="Tom">Tom</option>
+    </select>
 
-.bottom{
-height: 100px;
-width: 415px;
-background-color: gray;opacity:0.6;
-position: absolute;
-top: 850px;
-}
-@media screen and (max-height: 480px) {
-  .bottom{
-  height: 100px;
-  width: 415px;
-  background-color: gray;opacity:0.6;
-  position: absolute;
-  top: 600px;
-  }
-}
+  </form>
+     Sigg:<form action="">
+    <label for="sigg"></label>
+    <select id="dropdown2" name="sigg" >
+      <option value="Har mye">Har mye</option>
+      <option value="Har">Har</option>
+      <option value="Har litt">Har litt</option>
+      <option value="Tom">Tom</option>
+    </select>
 
-
-
-
-.menu{
-height: 100px;
-width: 100%;
-display: flex;
-    border: solid black 1px;
-
-}
-
-#menu{
-  display: flex;
-  border: solid black 1px;
-  height: 100%;
-  width: 100%;
-  font-size: 30px;
-text-align: center;
-}
-
-#menu:active{
-background-color: gray;
-}
+  </form>
+     </h3>
+</div>
 
 
-#content{
-min-width: 100%;
-min-height: 2000px;
-}
 
-#user-pic{
-
-}
-
-#user{
-height: 300px;
-width: 100%;
-  border: solid black 1px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-#upload{
-height: 1000px;
-  border: solid black 1px;
-}
-
-#space{
-  height: 300px;
-}
+  </div>
+   </div>
 
 
-/* user  */
-#dot {
-  height: 200px;
-  width: 200px;
-  background-color: none;
-  border-radius: 50%;
-  display: block;
-  border: solid black 1px;
-  overflow: hidden;
-}
-
-#dot img{
- height: 200px;
-  width: 200px;
-}
-
-#user{
-  display: flex;
-height: 500px;
-
-}
-
-#name{
-min-width: 200px;
-display: flex;
-font-size: 30px;
-height: 50px;
-align-items: center;
-justify-content: center;
-}
+  </div>
+  </div>
 
 
-#sq{
- display: flex;
-height:200px;
-width: 200px;
-  align-items: center;
-  justify-content: center;
-}
+<div class="bottom">
+<div class="menu">
 
-#username{
-display: flex;
-height: 20px;
-width: 200px;
-font-size: 15px;
-  align-items: center;
-  justify-content: center;
-}
+  <div id="menu" onclick="window.location='home.html'">
+hjem
+  </div>
 
-#users{
-display: flex;
-position: absolute;
-min-height: 100px;
-max-height: 200px;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-}
+  <div id="menu" onclick="window.location='sok.html'">
+søk
+  </div>
+  <div id="menu" onclick="window.location='profil.html'">
+Min Profil
+  </div>
+  <div id="menu" onclick="window.location='oprofil.html'">
+Min Profil
+  </div>
 
-#status{
-flex-direction: row;
-height: 500px;
-}
 
-      
+
+
+</div>
+</div>
+
+
+</center>
+  </body>
+</html>
+
     </style>
-    
-    
     
   </head>
   <body>
@@ -207,7 +151,7 @@ height: 500px;
    <div id="status">
    <h3> Snus:<form action="">
     <label for="snus"></label>
-    <select id="snus" name="snus">
+    <select id="dropdown1" onchange="chng1()"  name="snus">
       <option value="Har mye">Har mye</option>
       <option value="Har">Har</option>
       <option value="Har litt">Har litt</option>
@@ -217,7 +161,7 @@ height: 500px;
   </form>
      Sigg:<form action="">
     <label for="sigg"></label>
-    <select id="sigg" name="sigg">
+    <select id="dropdown2" name="sigg" >
       <option value="Har mye">Har mye</option>
       <option value="Har">Har</option>
       <option value="Har litt">Har litt</option>
@@ -251,8 +195,8 @@ søk
   <div id="menu" onclick="window.location='profil.html'">
 Min Profil
   </div>
-  <div id="menu">
-
+  <div id="menu" onclick="window.location='oprofil.html'">
+Min Profil
   </div>
 
 
